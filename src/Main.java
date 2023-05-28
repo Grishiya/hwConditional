@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         task1();
@@ -97,6 +98,17 @@ public class Main {
         }
 
         public static void task7 () {
+        //можно ввести сканнер,наконец
             System.out.println("Задача 7.");
+            Scanner chislo=new Scanner(System.in);
+            int one=chislo.nextInt();
+            int two=chislo.nextInt();
+            int three=chislo.nextInt();
+            if (one>two&&one>three)
+                System.out.println("Самое большое число "+one);
+            else if (two>one&&two>three)
+                System.out.println("Cамое большое число "+two);
+            else if (three>one&&three>two)
+                System.out.println("Самое большое число "+three);
         }
     }
